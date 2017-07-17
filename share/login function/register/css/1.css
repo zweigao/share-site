@@ -1,0 +1,278 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	height: 100%;
+}
+html{
+	height: 100%;
+}
+.header{
+	height: 100px;
+	background: white;
+}
+#head12{
+	float: left;
+	width: 30%;
+	height: 80px;
+}
+.logoo{
+	display: inline-block;
+	padding: 5px 0 0 250px;
+	height: 70px;
+	width: 400px;
+}
+.list_a{
+	text-decoration: none;
+	font-size: 18px;
+	color:orange;
+	font-family: "楷体";
+	padding-bottom: 6px;
+	border-bottom: 2px solid orange;
+}
+ .list_c{
+	float: left;
+	list-style-type: none;
+	margin-left: 0px;
+	line-height: 80px;
+	height: 80px;
+	width: 140px;
+	background: orange;
+}
+#head13{
+	float: left;
+	width: 70%;
+	height: 80px;
+}
+.li{
+    padding: 20px 0 0 150px;
+}
+.lis{
+	float: left;
+	list-style-type: none;
+	margin-left: 30px;
+	line-height: 40px;
+	height: 70px;
+}
+.lis_b{
+	float: left;
+	list-style-type: none;
+	margin-left: 30px;
+	line-height: 40px;
+	height: 70px;
+}
+.list{
+	text-decoration: none;
+	font-size: 18px;
+	color:black;
+	font-family: "楷体";
+	padding-bottom: 10px;
+}
+.list_b{
+	text-decoration: none;
+	font-size: 18px;
+	color:black;
+	font-family: "楷体";
+	padding-bottom: 6px;
+}
+.list_b span{
+	font-size: 9px;
+}
+.list:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+.list_b:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+.li_b{
+	background: #f5f5f5;
+	padding-top: 10px;
+	position: absolute;
+	z-index: 2;
+	width: 100px;
+	display: none;
+	margin-left:-20px; 
+}
+.li_a{
+	background: #f5f5f5;
+	position: relative;
+	top: -40px;
+	left: 101px;
+	z-index: 2;
+	width: 100px;
+	display: none; 
+}
+.lis_a span{
+	display: inline-block;
+	width: 75px;
+	cursor: pointer;
+	padding-left: 25px;
+}
+.lis_a span:hover{
+    background: orange;
+    color: white;
+}
+.lis_a{
+	list-style: none;
+	width: 100px;
+	height: 40px;
+	font-family: "楷体";
+	font-size: 16px;
+}
+#head{
+	width: 100%;
+	height: 650px;
+	background: url(../images/2.jpg) no-repeat;
+	background-size: 100% 670px;
+}
+#zhu{
+	height: 500px;
+	width: 400px;
+	background: white;
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+#up1{
+	width: 100%;
+	height: 15%;
+	background: #f5f5f5;
+}
+#up1 p{
+	font-family: "Coronet";
+	font-size: 30px;
+	position: relative;
+	left: 30px;
+	top: 10px;
+	color: orange;
+}
+#up1 h2{
+	font-family: "楷体";
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+}
+#up2{
+	width: 100%;
+	height: 60%;
+}
+.text{
+	display: block;
+	margin-top: 28px;
+	height: 40px;
+	width: 300px;
+	margin-left: 50px;
+	font-family: "楷体";
+	font-size: 20px;
+}
+.text_a{
+	display: inline-block;
+	margin-top: 28px;
+	height: 40px;
+	width: 150px;
+	margin-left: 50px;
+	font-family: "楷体";
+	font-size: 20px;
+}
+#checkCode{
+    height: 45px;
+    width: 145px;
+    background:#f5f5f5;
+	font-family:Arial,宋体;
+	font-size: 19px;
+	font-style:italic;
+	color:green;
+	border:0;
+	padding:2px 3px;
+	letter-spacing:3px;
+	font-weight:bolder;
+}
+.a1{
+	display: block;
+	margin-left: 200px;
+    font-family: "楷体";
+    color: #999;
+}
+#up3{
+	width: 100%;
+	height: 25%;
+}
+#up3 input{
+	margin-left: 50px;
+	height: 40px;
+	width: 300px;
+	color:white;
+	background: orange;
+	font-family: "楷体";
+	font-size: 20px;
+	outline: none;
+	border-radius: 8px 8px;
+	border: 0px;
+	cursor:pointer;
+}
+#up3 input:hover{
+     background: white;
+     border: 1px solid orange;
+     color: orange;
+}
+#up3 a{
+	text-decoration: none;
+}
+#foot{
+	height: 250px;
+	clear: both;
+	width:100%;
+	background: white;
+}
+.leftside{
+	float: left;;
+	width: 700px;
+	height: 100%;
+	position: relative;
+	left: 100px;
+}
+.leftside h3{
+	padding-top: 40px;
+	padding-bottom: 0px;
+	position: relative;
+	left: 210px;
+	font-family: "Coronet";
+	font-size: 25px;
+}
+.leftside p{
+	text-align:left;
+	position: relative;
+	left: 220px;
+	line-height: 30px;
+	font-size: 13px;
+}
+.middleside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.middleside p{
+   text-align: left;
+   position: relative;
+   top: 60px;
+   line-height: 30px;
+   font-size: 13px;
+   cursor:pointer;
+}
+.middleside p:hover{
+	color: orange;
+}
+.rightside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.rightside img{
+	height: 50px;
+	width: 90px;
+	position: relative;
+	top: 100px;
+}

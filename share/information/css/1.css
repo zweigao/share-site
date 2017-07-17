@@ -1,0 +1,426 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#contain{
+	width: 100%;
+	height: 731px;
+	background: #f5f5f5;
+}
+.header{
+	height: 100px;
+	background: white;
+}
+#head12{
+	float: left;
+	width: 30%;
+	height: 80px;
+}
+.logoo{
+	display: inline-block;
+	padding: 5px 0 0 250px;
+	height: 70px;
+	width: 400px;
+}
+.list_a{
+	text-decoration: none;
+	font-size: 18px;
+	color:orange;
+	font-family: "楷体";
+	padding-bottom: 6px;
+	border-bottom: 2px solid orange;
+}
+ .list_c{
+	float: left;
+	list-style-type: none;
+	margin-left: 0px;
+	line-height: 80px;
+	height: 80px;
+	width: 140px;
+	background: orange;
+}
+#head13{
+	float: left;
+	width: 70%;
+	height: 80px;
+}
+.li{
+    padding: 20px 0 0 150px;
+}
+.lis{
+	float: left;
+	list-style-type: none;
+	margin-left: 30px;
+	line-height: 40px;
+	height: 70px;
+}
+.lis_b{
+	float: left;
+	list-style-type: none;
+	margin-left: 30px;
+	line-height: 40px;
+	height: 70px;
+}
+.list{
+	text-decoration: none;
+	font-size: 18px;
+	color:black;
+	font-family: "楷体";
+	padding-bottom: 10px;
+}
+a{
+	text-decoration: none;
+}
+.list_e img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: relative;
+	top: 5px;
+}
+.list_e span{
+	color: black;
+	font-family: "楷体";
+	position: relative;
+	top: -4px;
+	left: 5px;
+}
+.list_b{
+	text-decoration: none;
+	font-size: 18px;
+	color:black;
+	font-family: "楷体";
+	padding-bottom: 6px;
+}
+.list_b span{
+	font-size: 9px;
+}
+.list:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+.list_b:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+.li_b{
+	background: #f5f5f5;
+	padding-top: 10px;
+	position: absolute;
+	z-index: 2;
+	width: 100px;
+	display: none;
+	margin-left:-20px; 
+}
+.li_a{
+	background: #f5f5f5;
+	position: relative;
+	top: -40px;
+	left: 101px;
+	z-index: 2;
+	width: 100px;
+	display: none; 
+}
+.lis_a span{
+	display: inline-block;
+	width: 75px;
+	cursor: pointer;
+	padding-left: 25px;
+}
+.lis_a span:hover{
+    background: orange;
+    color: white;
+}
+.lis_a{
+	list-style: none;
+	width: 100px;
+	height: 40px;
+	font-family: "楷体";
+	font-size: 16px;
+}
+#title{
+	width: 100%;
+	height: 10%;
+	background: purple;
+}
+#title p{
+	text-align: center;
+	color: white;
+	font-family: "楷体";
+	font-size: 30px;
+	line-height: 72px;
+}
+#main{
+	width: 100%;
+	height: 600px;
+	background: #f5f5f5;
+}
+#left{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+.bg{
+	height: 400px;
+	width: 500px;
+	background: url(../images/a.jpeg) no-repeat;
+	background-size: 100% 300px;
+	margin-left: 60px;
+	margin-top: 60px;
+}
+.bg img{
+	height: 300px;
+	width: 500px;
+}
+#exampleInputFile{
+	margin-top: 30px;
+	margin-left: 50px;
+	height: 35px;
+	width: 60px;
+	position: relative;
+	left: 365px;
+	top: 60px;
+}
+#left a{
+	font-family: "楷体";
+    font-size: 22px;
+    margin-left: 130px;
+    text-decoration: none;
+}
+#right{
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+.ni1{
+	margin: 10px;
+}
+.ni1 p{
+	display: inline-block;
+	font-family: "楷体";
+	font-size: 20px;
+	line-height: 28px;
+}
+#btn{
+	position: absolute;
+	left: 1090px;
+	top: 225px;
+	height: 30px;
+	width: 40px;
+	background: orange;
+	color: white;
+	border: 0px;
+	cursor:pointer ;
+}
+#btn:hover{
+	background: white;
+	color: orange;
+	border: 1px solid orange;
+}
+#btn1{
+	position: absolute;
+	left: 1090px;
+	top: 267px;
+	height: 30px;
+	width: 40px;
+	background: orange;
+	color: white;
+	border: 0px;
+	cursor:pointer ;
+}
+#btn1:hover{
+	background: white;
+	color: orange;
+	border: 1px solid orange;
+}
+.name1{
+	position: relative;
+	left: 100px;
+	height: 30px;
+	width: 300px;
+	text-align:left;
+}
+.name2{
+	position: relative;
+	left: 96px;
+	height: 30px;
+	width: 300px;
+}
+.name3{
+	position: relative;
+	left: 56px;
+	height: 30px;
+	width: 300px;
+}
+.name4{
+	position: relative;
+	left: 60px;
+	height: 30px;
+	width: 300px;
+}
+.name5{
+	position: relative;
+	left: 60px;
+	height: 30px;
+	width: 300px;
+}
+.name6{
+	position: relative;
+	left: 60px;
+	height: 30px;
+	width: 300px;
+}
+.name7{
+	position: relative;
+	left: 100px;
+	height: 30px;
+	width: 300px;
+}
+.name8{
+	position: relative;
+	left: 40px;
+	height: 30px;
+	width: 300px;
+}
+.name9{
+	position: relative;
+	left: 60px;
+	height: 30px;
+	width: 300px;
+}
+.name12{
+	position: relative;
+	left: 100px;
+}
+.name13{
+	position: relative;
+	left: 100px;
+}
+.nan{
+	position: relative;
+	left: 100px;
+}
+.song{
+	position: relative;
+	left: 50px;
+}
+.sing{
+	position: relative;
+	left: 50px;
+}
+.ming{
+	position: relative;
+	left: 100px;
+}
+.name10{
+	height: 40px;
+	width: 100px;
+	position: relative;
+	left: 200px;
+	top: 20px;
+	color: white;
+	background: orange;
+	outline: none;
+	font-family: "楷体";
+	font-size: 22px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.name10:hover{
+	background: #f5f5f5;
+	border: 2px solid orange;
+	color:orange;
+}
+.name11{
+	height: 40px;
+	width: 100px;
+	position: relative;
+	left: 250px;
+	top: 20px;
+	color:white;
+	background: orange;
+	outline: none;
+	font-family: "楷体";
+	font-size: 22px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.name11:hover{
+	background: #f5f5f5;
+	border: 2px solid orange;
+	color:orange;
+}
+.xiu{
+	height: 40px;
+	width: 100px;
+	color:white;
+	background: orange;
+	outline: none;
+	font-family: "楷体";
+	font-size: 22px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.xiu:hover{
+	background: #f5f5f5;
+	border: 2px solid orange;
+	color:orange;
+}
+#foot{
+	height: 250px;
+	clear: both;
+	width:100%;
+	background: white;
+}
+.leftside{
+	float: left;;
+	width: 700px;
+	height: 100%;
+	position: relative;
+	left: 100px;
+}
+.leftside h3{
+	padding-top: 40px;
+	padding-bottom: 0px;
+	position: relative;
+	left: 210px;
+	font-family: "Coronet";
+	font-size: 25px;
+}
+.leftside p{
+	text-align:left;
+	position: relative;
+	left: 220px;
+	line-height: 30px;
+	font-size: 13px;
+}
+.middleside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.middleside p{
+   text-align: left;
+   position: relative;
+   top: 60px;
+   line-height: 30px;
+   font-size: 13px;
+   cursor: pointer;
+}
+.middleside p:hover{
+	color: orange;
+}
+.rightside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.rightside img{
+	height: 50px;
+	width: 90px;
+	position: relative;
+	top: 100px;
+}

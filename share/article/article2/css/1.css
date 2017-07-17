@@ -1,0 +1,394 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.title{
+	margin-top: 40px;
+	height: 100px;
+	width: 800px;
+}
+.title p{
+	font-family: "楷体";
+	font-size: 38px;
+	text-align: left;
+}
+hr{
+	width: 53%;
+	background: #E5E5E5;
+	height: 1px;
+	border: 0px;
+}
+.header{
+	width: 800px;
+	height: 200px;
+	border: 1px solid #E5E5E5;
+	margin-top:30px 
+}
+.left_a{
+	float: left;
+	height: 100%;
+	width: 25%;
+	display: table-cell;
+    vertical-align:middle;
+}
+.middle{
+	height: 100%;
+	width: 100%;
+	/*为什么实现不了垂直居中？
+	
+	display:table-cell;  
+    vertical-align:middle;
+    text-align: center; 
+   */     
+}
+.middle img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	vertical-align:middle;
+	cursor: pointer;
+}
+.middle img:hover{
+	transform: scale(3,3);
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.bei{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-top: 25px;
+	background:url(../images/o.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.right_a{
+	float: left;
+	width: 75%;
+	height: 100%;
+}
+.name{
+	font-family: "楷体";
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	left: -240px;
+}
+.name:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+.art{
+	text-align: left;
+	font-family: "楷体";
+	line-height: 25px;
+	font-size: 17px;
+	width: 500px;
+	margin-bottom: 20px;
+	margin-left: -95px;
+}
+.right_a img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	left: -140px;
+	cursor: pointer;
+}
+.right_a img:hover{
+	opacity: 0.3;
+}
+.right_a span{
+    position: relative;
+    left: -140px;
+    top: -10px;
+    font-family: "楷体";
+}
+audio{
+	position: absolute;
+	top: 410px;
+	left: 450px;
+}
+.zan{
+	height: 60px;
+	width: 150px;
+	margin: 0 auto;
+}
+.pict{
+	margin-top: 20px;
+	width: 200px;
+	height: 30px;
+	margin-left:270px;
+}
+.pict img{
+	height: 30px;
+	width: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.pict img:hover{
+	opacity: 0.3;
+}
+.index{
+	height: 35px;
+	width: 130px;
+	background:white;
+	border-radius: 6px 6px;
+	position: relative;
+	left: 60px;
+	top: -70px;
+	display:none;
+}
+.index img{
+	height: 30px;
+	width: 30px;
+	margin-left: 5px;
+}
+.k1{
+	margin-top: 10px;
+	width: 200px;
+	height: 20px;
+	margin-left: 270px;
+}
+.k1 span{
+	margin-left: 20px;
+	font-family: "楷体";
+}
+.main_a{
+	width: 800px;
+	height:900px;
+	margin-top:50px;
+}
+.main_a p{
+    text-align: left;
+	font-family: "楷体";
+	line-height: 30px;
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-indent:2em;
+}
+.main_a h2{
+	text-align: left;
+	font-family: "楷体";
+	margin-bottom: 20px;
+}
+.main_a img{
+	height: 650px;
+	width: 800px;
+	margin-bottom: 10px;
+}
+.main_b{
+	width: 800px;
+	height:1020px;
+	margin-top: 80px;
+}
+.ti{
+	font-family:"楷体";
+	text-align: left;
+	margin-bottom: 20px;
+}
+.pic{
+	height: 650px;
+	width: 800px;
+}
+.p1{
+	text-align: left;
+	font-family: "楷体";
+	line-height: 30px;
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-indent:2em;
+}
+.chang{
+	height: 150px;
+	background:#FFF5E5;
+	border: 1px solid red; 
+}
+.chang h3{
+	text-align: left;
+	margin:20px 20px 10px 20px;
+	font-family: "楷体";
+}
+.chang p{
+	line-height: 30px;
+	margin:0 30px;
+	font-family: "楷体";
+	text-align: left;
+}
+.main_c{
+	width: 800px;
+	height:1020px;
+	margin-top: 80px;
+}
+.main_d{
+	width: 800px;
+	height:1020px;
+	margin-top: 80px;
+}
+.main_e{
+	margin-top: 50px;
+	height: 330px;
+}
+.line_b{
+   width: 60%;
+   margin: 0 auto;
+   border: 0px;
+   height: 1px;
+   background: black;
+}
+.little{
+	margin-left: -500px;
+	padding: 10px;
+	font-family: "楷体";
+	font-size: 25px;
+}
+.t1{
+	display: block;
+}
+.span1{
+	margin-left: -450px;
+	font-family: "楷体";
+	font-size:20px;
+	color: orange;
+	cursor:pointer;
+}
+.span2{
+	font-family: "楷体";
+	font-size:20px;
+	cursor:pointer;
+}
+.span2:hover{
+   color: orange;
+}
+.t1{
+	height: 150px;
+	width: 500px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.p6{
+	margin-left: 0px;
+	font-family: "楷体";
+	font-size:20px;
+	cursor:pointer;
+}
+.p6:hover{
+	color: orange;
+	border-bottom: 1px solid orange;
+}
+.inputa{
+	margin-left: 340px;
+	height: 40px;
+	width: 120px;
+	font-family: "楷体";
+	font-size: 20px;
+	outline: none;
+	background: orange;
+	border-radius: 5px 5px;
+	border: 0px;
+	color: white;
+	cursor: pointer;
+}
+.inputa:hover{
+	background: white;
+	color:orange;
+	border: 1px solid orange;
+}
+.main_f{
+	width: 500px;
+	height: 400px;
+	background:white;
+	position: fixed;
+	top: 100px;
+	left: 510px;
+	display: none;
+	z-index: 99;
+}
+.t2{
+	height: 200px;
+	width: 460px;
+	margin:50px 20px;
+	display: block;
+}
+.inputb{
+	margin-left: 380px;
+	height: 35px;
+	width: 80px;
+	font-family: "楷体";
+	font-size: 20px;
+	outline: none;
+	background: orange;
+	border-radius: 3px 3px;
+	border: 0px;
+	color: white;
+	cursor: pointer;
+}
+.inputb:hover{
+	background: white;
+	color:orange;
+	border: 1px solid orange;
+}
+.layer{
+	background: gray;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:2;
+	opacity: 0.4;
+}
+#footer2{
+	height: 250px;
+	background: #f5f5f5;
+}
+.leftside{
+	float: left;;
+	width: 700px;
+	height: 100%;
+	position: relative;
+	left: 100px;
+}
+.leftside h3{
+	padding-top: 40px;
+	padding-bottom: 0px;
+	position: relative;
+	left: -100px;
+	font-family: "Coronet";
+	font-size: 25px;
+}
+.leftside p{
+	text-align:left;
+	position: relative;
+	left: 220px;
+	line-height: 30px;
+	font-size: 13px;
+}
+.middleside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.middleside p{
+   text-align: left;
+   position: relative;
+   top: 60px;
+   line-height: 30px;
+   font-size: 13px;
+   cursor: pointer;
+}
+.middleside p:hover{
+    color: orange;
+}
+.rightside{
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.rightside img{
+	height: 50px;
+	width: 90px;
+	position: relative;
+	top: 100px;
+}
