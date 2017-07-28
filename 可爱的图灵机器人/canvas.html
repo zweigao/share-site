@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="jquery-3.1.1.min.js"></script>
+<title>聊天机器人</title>
+<style type="text/css">
+* { 
+	margin:0; padding:0;
+}
+body {
+     width:100%;
+     height:100%;
+     
+}
+li{
+	list-style: none;
+}
+#div1{
+	position: absolute;
+	z-index: 99;
+}
+.btn{
+	position: fixed;
+	z-index: 999;
+	height: 40px;
+	width: 700px;
+	outline: none;
+	background: rgba(0,0,0,0);
+	border: 1px solid black;
+}
+.aBtn{
+	position: fixed;
+	z-index: 999;
+	outline: none;
+	border: 0px;
+	display: inline-block;
+	height: 40px;
+	width: 80px;
+	font-family: "微软雅黑";
+	border-radius: 10px 10px;
+	font-size: 17px;
+	background:#ffeb3b;
+	color:#607d8b; 
+}
+.aBtn:hover{
+	color: white;
+	background: #2795ca;
+}
+#div2{
+	position: absolute;
+	z-index: 99;
+	top: 40px;
+	left: 20px;
+	height: 200px;
+	width: 280px;
+    display: none;
+}
+.left_part{
+	position: absolute;
+	left: 0px;
+	width: 35%;
+	height: 100%;
+}
+.right_part{
+	position: absolute;
+	right: 0px;
+	width: 65%;
+	height: 100%;
+}
+.picture_left{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+.txt{
+	height: 110px;
+	width: 300px;
+	padding: 10px;
+	line-height: 20px;
+	font-family: "楷体";
+	font-size: 17px;
+	outline: none;
+	border: 0px;
+	text-indent: 2em;
+}
+.divstyle{
+	z-index: 99;
+	height: 80px;
+	width: 450px;
+	position: absolute;
+	right: 20px;
+
+}
+.adivstyle{
+	z-index: 99;
+	height: 80px;
+	width: 450px;
+	position: absolute;
+	left: 20px;
+
+}
+.div3{
+	position: absolute;
+	right: 0px;
+	width: 20%;
+	height: 100%;
+}
+.div4{
+	position: absolute;
+	left: 0px;
+	width: 80%;
+	height: 100%;
+}
+.div5{
+	position: absolute;
+	left: 0px;
+	width: 20%;
+	height: 100%;
+}
+.div6{
+	position: absolute;
+	right: 0px;
+	width: 80%;
+	height: 100%;
+}
+.aImg{
+    height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+.text1{
+	height: 35px;
+	width: 320px;
+	margin: 22px 0px;
+	font-family: "楷体";
+	font-size: 17px;
+	line-height: 35px;
+	border: 0px;
+	outline: none;
+}
+#contain{
+	width: 100%;
+	background: #c8edfd;
+}
+</style>
+
+</head>
+<body>
+    <div id="contain"></div>
+    <div id="div1">
+        <input type="text" name="txt" placeholder="我想说……" class="btn" id="btn">
+        <input type="button" name="btn" value="点击发射" class="aBtn" id="aBtn"> 
+    </div>
+    <div id="div2">
+        <div class="left_part">
+            <img src="images/1.jpg" class="picture_left">
+        </div>
+         <div class="right_part">
+            <textarea class="txt">大家好，我是人见人爱的图灵小机器人！我今年5岁了，我会的东西可多了，像是影视搜索呀，生活百科呀，讲笑话呀，查询各种东西等等这些实用小功能我都会，快来和我聊天吧！</textarea>
+        </div>
+    </div>
+
+<script type="text/javascript">		
+    $(document).ready(function() { 	
+
+         var aLeft=($(window).width()-$("#btn").width())/5*2;
+         var aHeight=$(window).height()-$("#btn").height()-50;
+         var oLeft=aLeft+$("#btn").width()+20;
+         var lh;
+        $("#btn").css("left",aLeft);
+        $("#btn").css("top",aHeight);
+        $("#aBtn").css("left",oLeft);
+        $("#aBtn").css("top",aHeight);
+
+        $("#div2").fadeIn(3000);
+
+        var lh=0;
+        var i=1
+        var flag=true;
+        var kh=$(window).height();
+        $("#contain").css("height",kh);
+        $("#aBtn").click(function(){
+        	if(flag==false){ return false;}
+              	else if(flag){
+
+               kh=kh+230;
+        	   $("#contain").css("height",kh);
+               var oDiv=$("<div></div>");
+               oDiv.addClass("divstyle");
+               $("#div2").after(oDiv);
+               lh=lh+150;
+               oDiv.css("top",lh);
+               var div3=$("<div></div>");
+               var div4=$("<div></div>");
+               div3.addClass("div3");
+               div4.addClass("div4");
+               oDiv.append(div3);
+               oDiv.append(div4);
+               var aImg=$("<img>");
+               aImg.addClass("aImg");
+               div3.append(aImg);
+               aImg.attr("src","images/2.jpg");
+               var text1=$("<textarea></textarea>");
+               text1.addClass("text1");
+               div4.append(text1);
+               text1.val($("#btn").val());
+               flag=false;
+               if (i%2==0) {
+               	   var t = $(window).scrollTop();
+                   $('body,html').animate({'scrollTop':t+380},500)
+               }
+
+        	  var xhr = new XMLHttpRequest;
+              var url = "http://www.tuling123.com/openapi/api?key=34e566eca6484198b29208f8af3a7866&info=" +$("#btn").val();
+              xhr.open("get",url,false);
+              xhr.send(null);
+              if ( (xhr.status >= 200 && xhr.status < 300) || xhr.status == 304 ){
+              	
+                  setTimeout(function(){
+                         var oDiv=$("<div></div>");
+                         oDiv.addClass("adivstyle");
+                         $("#div2").after(oDiv);
+                         lh=lh+80;
+                         oDiv.css("top",lh);
+                         var div5=$("<div></div>");
+                         var div6=$("<div></div>");
+                         div5.addClass("div5");
+                         div6.addClass("div6");
+                         oDiv.append(div5);
+                         oDiv.append(div6);
+                         var aImg=$("<img>");
+                         aImg.addClass("aImg");
+                         div5.append(aImg);
+                         aImg.attr("src","images/1.jpg");
+                         var text1=$("<textarea></textarea>");
+                         text1.addClass("text1");
+                         div6.append(text1);
+                         if (eval("(" + xhr.responseText + ")").url!=undefined) {
+                        	  var oUrl=eval("(" + xhr.responseText + ")").url;
+                         	  text1.val(eval("(" + xhr.responseText + ")").text+"，网址是："+oUrl);
+                         }
+                         else {
+                               text1.val(eval("(" + xhr.responseText + ")").text);
+                         }
+                         flag=true;
+                         $("#btn").val("");
+                         i++;       
+                     },2000);
+                   
+                };
+              }
+         })
+
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>

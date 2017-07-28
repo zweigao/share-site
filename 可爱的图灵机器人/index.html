@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <script src="jquery-3.1.1.min.js"></script>
+ <title>可爱的图灵机器人</title>
+ <style type="text/css">
+ /*通用样式*/
+body,ul,li,p,h1,h2,h3,h4,h5{
+    margin:0;
+    padding:0;
+    font-size:100%;
+}
+body{
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', SimSun, 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    font-size: 14px;
+    background:url(images/1.jpeg) no-repeat;
+    background-size: 100% 170%;
+}
+button,input,select,textarea{
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+a:focus{
+    outline: none;
+}
+img{
+    border:0;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.center{
+    width: 1000px;
+    margin: 0 auto 0;
+}
+/*content*/
+.content{
+    position: relative;
+    margin:50px 0px;
+    width: 900px;
+    height: 460px;
+}
+.l-pic-index{
+	/*display:none;*/
+    position: absolute;
+    left: 400px;
+    top: 1px;
+    z-index:2;
+    width:50px;
+    height:460px;
+    background: url("images/j1.png") no-repeat right 0;
+}
+.r-pic-index{
+	/*display:none;*/
+    position: absolute;
+    right: 400px;
+    top: 0;
+    z-index: 2;
+    width:50px;
+    *width:82px;
+    height:460px;
+    background: url("images/j4.png") no-repeat left 0;
+}
+.l-bg-index{
+    position: absolute;
+    top: -3px;
+    left: 430px;
+    z-index: 1;
+    width: 25px;
+    height: 459px;
+    background: url("images/j2.png") right 0 no-repeat;
+}
+.r-bg-index{
+    position: absolute;
+    top:-4px;
+    right: 430px;
+    z-index: 1;
+    width: 25px;
+    height: 459px;
+    background: url("images/j3.png") 0 0 no-repeat;
+}
+.main-index{
+    display: none;
+    overflow: hidden;
+    zoom:1;
+    position: absolute;
+    z-index: 5;
+    width:530px;
+    height:280px;
+    left:145px;
+    top:90px;
+    color: #2e2e2e;
+}
+.intro-text{
+    margin: 10px 0 0 44px;
+    line-height: 1.8;
+    text-indent: 30px;
+    color: black;
+}
+#aBtn{
+    border: 0px;
+    outline: none;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    border-radius: 20px 20px;
+    color:#4caf50;
+    background:#cddc39;
+}
+#aBtn:hover{
+    color: white;
+    background: orange;
+}
+ </style>
+</head>
+<body>
+ <div class="content">
+        <div class="l-pic-index"></div>
+        <div class="r-pic-index"></div>
+        <div class="l-bg-index"></div>
+        <div class="r-bg-index"></div>
+        <div class="main-index">
+            <!-- <h1 class="title"><img src="./img/intro-title.png" alt=""></h1> -->
+	            <p class="intro-text">
+	                欢迎来到我们可爱的图灵机器人的世界！在这里，你将会认识一位可爱的小伙伴，她可厉害了，会做很多很多的事情，还会和你聊天，快来认识你的这位小伙伴吧！！
+	            </p>
+                <a href="canvas.html"><input type="button" name="btn" value="开始你的聊天之旅吧" id="aBtn"></a>
+        </div>
+    </div>
+</body>
+<script>
+ $(document).ready(function(){
+        //卷轴展开效果
+        $(".l-pic-index").animate({'left':'97px','top':'-4px'},1300);
+        $(".r-pic-index").animate({'right':'-23px','top':'-5px'},1450);
+        $(".l-bg-index").animate({'width':'433px','left':'73px'},1500);
+        $(".r-bg-index").animate({'width':'433px','right':'-38px'},1500,function(){
+            $(".main-index").fadeIn(800);
+        });
+    });
+</script>
+</html>
